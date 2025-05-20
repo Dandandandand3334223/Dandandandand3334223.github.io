@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Trends</title>
+    <link rel="stylesheet" href="whatever.css">
+    <script>
+        function showTrend(year) {
+            const trends = {
+                2020: "2020 saw the rise of dance challenges like the song 'Renegade', 'Savage',   and viral trends during the pandemic.",
+                2021: "2021 was dominated by trends like 'Sea Shanties' and the 'Berries and Cream' meme.",
+                2022: "In 2022, TikTok trends included 'Corn Kid' and the 'Little Miss' meme.",
+                2023: "2023 brought trends like 'NPC streaming' and 'AI-generated music videos.'",
+                2024: "2024 focused on 'Eco-friendly challenges' and 'AI-assisted content creation.'"
+            };
+            document.getElementById("trend-description").textContent = trends[year];
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Social Media Trends</h1>
+        <p>The evolution of social media trends since TikTok's rise to popularity.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introducton</h2>
+            <p>Social media have transformed the way we communicate, share and consume content. TikTok, in particular, has revolutionized trends with its short-form videos.</p>
+        </section>
+
+        <section>
+            <h2>Popular Trends</h2>
+            <ul>
+                <li>Dance Challenges</li>
+                <li>Hashtag Trends</li>
+                <li>Viral Memes</li>
+                <li>Influencer Collaborations</li>
+            </ul>
+        </section>
+
+        <section> <!-- Heading2 for the impact of TikTok-->
+            <h2>Impact of TikTok</h2>
+            <p>TikTok has influenced other platforms like Instagram and YouTube to adopt short-form video formats, reshaping the digital landscape and changing everything. Tiktok has made a huge impact on younger audiences both positively and negatively. </p>
+        </section>
+
+        <section>
+            <h2>Trends by Year</h2>
+            <div> <!-- Buttons for each year, showing their trends when clicked. -->
+                <button onclick="showTrend(2020)">2020</button>
+                <button onclick="showTrend(2021)">2021</button>
+                <button onclick="showTrend(2022)">2022</button>
+                <button onclick="showTrend(2023)">2023</button>
+                <button onclick="showTrend(2024)">2024</button>
+            </div>
+            <p id="trend-description" style="margin-top: 10px; font-style: italic;">Click a year to see the trends.</p>
+        </section>
+    </main>
+</body>
+</html>
